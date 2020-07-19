@@ -1,0 +1,95 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Josefin Sans', sans-serif;}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text_effect{
+  	text-shadow: 2px 2px 3px blue;
+  	transition: transform 2s;
+  }
+
+  /*Animation in css3*/
+  .batman_contact{
+  	width: 100%; height: 100px; position: relative;
+  }
+
+  .batman_contact img {
+  	width:140px; height:120px; position: absolute; left:0; top:-24px;
+  	animation-name: batmanbhag;
+  	animation-duration: 4s;
+  	animation-timing-function: linear;	
+  	animation-iteration-count: infinite;
+  }
+
+  @keyframes batmanbhag {
+  	from{ left:0 }
+  	to{ left:85% }
+  }
+
+/*Transition Use case */
+  .love_class {
+width:40px; height: 40px;
+/*transition-property: width, height;*/
+transition-property: transform;
+transition-duration: 1s;
+/*transition-timing-function: linear;*/
+  }
+  
+  .love_class:hover {
+/*width:80px; height: 80px;*/
+transform: scale(2, 2);
+    }
+
+    .img_zoom{
+		overflow: hidden;
+    }
+     .img_zoom img{
+	transition: all 1.5s ease;
+	}
+	 .img_zoom:hover img{
+	transform: scale(1.5);
+	}
+    /*Multi Para in CSS3 Example: NewsPaper*/
+
+    .about_para {
+    	column-count: 3;
+    	column-gap: 50px;
+    	column-rule: dashed;
+    	text-align: justify;
+    }
+
+    /*border in css3*/
+
+    .img-fluid{
+    	border-radius: 40px;
+    }
+
+    .card {
+    	box-shadow: 4px 4px 5px 4px grey
+    }
+
+    /*Transform in css 3*/
+
+     .text_effect:hover{
+     	transform: rotate(360deg);
+     }
+
+
+/*Linea Gradient*/
+
+.join_gradient{
+	/*background-image: linear-gradient(red, yellow);*/
+	/*background-image: linear-gradient(to right,red, yellow);*/
+	background-image: linear-gradient(to left, #F650FE,#607BF5);
+}
+
+.flex_css{
+	width: 100%; height: 100px;
+	background-image: linear-gradient(to left, #F650FE,#607BF5);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
